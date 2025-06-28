@@ -171,7 +171,7 @@ const CreateTokenModal = ({ modalIsOpen, setIsOpen }) => {
             // Handle non-local network with ICRC2 approval
             const ledgerActor = Actor.createActor(ledgerIDL, {
               agent,
-              canisterId: "ryjl3-tyaaa-aaaaa-aaaba-cai",  // Ledger canister ID
+              canisterId: "bd3sg-teaaa-aaaaa-qaaba-cai",  // Ledger canister ID
           });
 
           const spenderAccount = {
@@ -201,7 +201,7 @@ const CreateTokenModal = ({ modalIsOpen, setIsOpen }) => {
           console.log("ICRC2 approve response:", approveResponse);
   
           if(approveResponse && !approveResponse?.Err){
-            const ledgerPrincipal=Principal.fromText("ryjl3-tyaaa-aaaaa-aaaba-cai")
+            const ledgerPrincipal=Principal.fromText("bd3sg-teaaa-aaaaa-qaaba-cai")
             const feeResponse= await actor.token_fee_transfer(ownerPrincipal, Amount,ledgerPrincipal);
             console.log('feeResponse=',feeResponse);
   
@@ -248,7 +248,7 @@ const CreateTokenModal = ({ modalIsOpen, setIsOpen }) => {
             // Handle non-local network with ICRC2 approval
             const ledgerActor = Actor.createActor(ledgerIDL, {
                 agent,
-                canisterId: "ryjl3-tyaaa-aaaaa-aaaba-cai",  // Ledger canister ID
+                canisterId: "bd3sg-teaaa-aaaaa-qaaba-cai",  // Ledger canister ID
             });
 
             const spenderAccount = {
@@ -277,7 +277,7 @@ const CreateTokenModal = ({ modalIsOpen, setIsOpen }) => {
             console.log("ICRC2 approve response:", approveResponse);
     
             if(approveResponse && !approveResponse?.Err){
-              const ledgerPrincipal=Principal.fromText("ryjl3-tyaaa-aaaaa-aaaba-cai")
+              const ledgerPrincipal=Principal.fromText("bd3sg-teaaa-aaaaa-qaaba-cai")
               const feeResponse= await actor.token_fee_transfer(ownerPrincipal, Amount,ledgerPrincipal);
               console.log('feeResponse=',feeResponse);
     

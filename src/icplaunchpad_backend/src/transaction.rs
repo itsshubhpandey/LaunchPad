@@ -78,7 +78,7 @@ async fn buy_transfer(params: BuyTransferParams) -> Result<Nat, String> {
     })?;
 
     // Perform the transfer using `icrc2_transfer_from`
-    let ledger_canister_id = Principal::from_text("ryjl3-tyaaa-aaaaa-aaaba-cai").unwrap();
+    let ledger_canister_id = Principal::from_text("bd3sg-teaaa-aaaaa-qaaba-cai").unwrap();
     let backend_canister_id = ic_cdk::id();
 
     let transfer_args = TransferFromArgs {

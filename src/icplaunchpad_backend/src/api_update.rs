@@ -79,7 +79,7 @@ pub async fn obtain_cycles_for_canister(
 
     // Mainnet Canister IDs for the Cycles Minting Canister (CMC) and the ICP Ledger
     let cmc_principal = Principal::from_text("rkp4c-7iaaa-aaaaa-aaaca-cai").unwrap();
-    let ledger_principal = Principal::from_text("ryjl3-tyaaa-aaaaa-aaaba-cai").unwrap();
+    let ledger_principal = Principal::from_text("bd3sg-teaaa-aaaaa-qaaba-cai").unwrap();
 
     // Setup the cycle minting components
     let cmc = Arc::new(IcCyclesMintingCanister::new(cmc_principal));

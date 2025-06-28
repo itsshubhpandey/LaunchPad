@@ -130,7 +130,7 @@ fn icrc10_supported_standards() -> Vec<SupportedStandard> {
 #[update(guard = prevent_anonymous)]
 fn icrc28_trusted_origins() -> Icrc28TrustedOriginsResponse {
     let trusted_origins = vec![
-        String::from("https://ajzka-lyaaa-aaaak-ak5rq-cai.icp0.io"),
+        String::from("https://br5f7-7uaaa-aaaaa-qaaca-cai.icp0.io"),
         String::from("http://localhost:3000"),
         String::from("http://avqkn-guaaa-aaaaa-qaaea-cai.localhost:4943"),
         String::from("http://127.0.0.1:4943/?canisterId=aoymu-gaaaa-aaaak-ak5ra-cai"),
